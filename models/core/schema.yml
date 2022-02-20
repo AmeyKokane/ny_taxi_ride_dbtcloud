@@ -1,5 +1,20 @@
 version: 2
 
+sources:
+    - name: staging
+      #For bigquery:
+      database:  tribal-archery-339118
+
+      # For postgres:
+      #database: production
+
+      schema: trips_data_all_us
+
+      # loaded_at_field: record_loaded_at
+      #tables:
+        #- name: green_tripdata_external_table
+        #- name: yellow_tripdata_external_table
+
 models:
   - name: dim_zones
     description: >
