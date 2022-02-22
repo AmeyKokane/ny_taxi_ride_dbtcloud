@@ -17,7 +17,7 @@ select
     fhv_data.pickup_locationid, 
     pickup_zone.borough as pickup_borough, 
     pickup_zone.zone as pickup_zone, 
-    trips_unioned.dropoff_locationid,
+    fhv_data.dropoff_locationid,
     dropoff_zone.borough as dropoff_borough, 
     dropoff_zone.zone as dropoff_zone,  
     fhv_data.pickup_datetime, 
